@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  filter: invert(1);
+  transition: 1s;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  color: #777777;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(16, 37, 34);
+  color: #ffffff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: darkgreen;
+  color: #ffffff;
+}
+
+/* Cor do fundo do site */
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/mattie.jpg);
+  background-size: cover;
+}
+
+.header .row {
+  margin-top: 70px;
+}
+
+.categories {
+  margin: 70px 0;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555555;
+}
+
+.title::after {
+  content: '';
+  background: darkgreen;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  color: #000000;
+  font-weight: normal;
+  text-align: center;
+}
+
+.col-4 p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.rating .fa {
+  color: darkgreen;
+}
+
+.col-4:hover {
+  transform: translateY(-15px);
+}
+
+.offer {
+  background: url(images/bg2.jpg);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+
+.offer small {
+  color: #ffffff;
+}
+
+.col-2 .offer-img {
+  padding: 50px;
+}
+
+.testimonial {
+  padding-top: 100px;
+}
+
+.testimonial .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+  transform: translateY(-15px);
+}
+
+.fa.fa-quote-left {
+  font-size: 34px;
+  color: rgb(16, 37, 34);
+}
+
+.col-3 p {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #555555;
+}
+
+.testimonial .col-3 h3 {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+
+.brands {
+  margin: 100px auto;
+}
+
+.col-5 {
+  width: 160px;
+}
+
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+  filter: grayscale(0);
+}
+
+.footer{
+  background: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer .footer-col-2 img{
+  filter: invert(1);
+}
+
+.footer p{
+  color: #ffffff;
+}
+
+.footer h3{
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+  flex-basis: 12%;
+}
+
+.footer-col-2{
+  flex-basis: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.menu-icon{
+  width: 28px;
+  margin-left: 60px;
+  display: none;
+}
+
+@media only screen and (max-width: 800px){
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a{
+    color: #ffffff;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .row{
+    text-align: center;
+  }
+  .col-2, .col-3, .col-4{
+    flex-basis: 100%;
+  }
+}
